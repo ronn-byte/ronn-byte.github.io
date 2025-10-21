@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RONNY KIPROP | Cloud & Network Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark blue-gray background */
+            color: #d1d5db; /* Light gray text */
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .brand-gradient {
+            background: linear-gradient(to right, #38bdf8, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .brand-border {
+            border-color: #38bdf8;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #1f2937;
+            border: 4px solid #38bdf8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <a href="#"><span class="brand-gradient">RONNY KIPROP</span></a>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#learning-plan" class="hover:text-sky-400 transition-colors">My Plan</a>
+                <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-4 py-2 rounded-lg transition-all">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="#learning-plan" class="block py-2 px-4 text-sm hover:bg-gray-700">My Plan</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-700">Skills</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center text-center">
+            <div class="max-w-3xl">
+                <p class="text-sky-400 font-semibold">Hello, I'm Ronny Kiprop.</p> 
+                <h1 class="text-4xl md:text-6xl font-bold text-white mt-4 leading-tight">Computer Technology Student | Cloud & Network Enthusiast</h1>
+                <p class="mt-6 text-lg text-gray-400">
+                    Building a career from the foundation up — mastering networking fundamentals and expanding into multi-cloud environments (Azure & Huawei Cloud) while improving software and algorithmic skills.
+                </p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="#projects" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-all">View My Projects</a>
+                    <a href="https://www.linkedin.com/in/ronny-kiprop-828b612b9/" target="_blank" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-all">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">About Me</h2>
+                <div class="w-24 h-1 bg-sky-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-5 gap-10 items-center">
+                <div class="md:col-span-2">
+                    <img src="https://placehold.co/400x400/1f2937/d1d5db?text=Ronny+Kiprop" alt="A professional photo of Ronny Kiprop" class="rounded-lg shadow-2xl mx-auto">
+                </div>
+                <div class="md:col-span-3 text-lg">
+                    <p class="mb-4">
+                        I'm a BSc Computer Technology student at Murang'a University of Technology, passionate about networking and cloud engineering.
+                        I focus on mastering how data moves (networking fundamentals) and then applying that knowledge to multi-cloud solutions and cloud migration patterns.
+                    </p>
+                    <p class="mb-4">
+                        My learning approach is structured: Master the foundation (networking), then gain cloud fluency (Azure & Huawei Cloud), and finally specialize in high-value areas like cloud networking and migration.
+                    </p>
+                    <p>
+                        I am actively looking for internships and hands-on opportunities where I can contribute, learn, and grow professionally.
+                    </p>
+                    <div class="mt-4 space-y-1 text-gray-300">
+                        <div><strong>Education:</strong> BSc Computer Technology — Murang'a University of Technology </div>
+                        <div><strong>Location:</strong> Kenya</div>
+                        <div><strong>Phone:</strong> +254743448356</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Journey -->
+        <section id="learning-plan" class="py-20">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">My Aligned Learning Plan</h2>
+                <p class="text-gray-400 mt-2">A structured path from foundation to specialization.</p>
+                <div class="w-24 h-1 bg-sky-500 mx-auto mt-4"></div>
+            </div>
+            <div class="relative max-w-2xl mx-auto pl-8">
+                <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-700"></div>
+                <!-- Tier 1 -->
+                <div class="mb-12 relative timeline-item">
+                    <h3 class="text-2xl font-bold text-sky-400">Tier 1: Master the Foundation</h3>
+                    <p class="font-semibold text-white mt-1">Status: <span class="text-green-400">In Progress</span></p>
+                    <p class="mt-2 text-gray-400">
+                        Becoming an expert on how data moves — fundamental networking topics and hands-on simulation.
+                    </p>
+                    <div class="mt-3 p-4 rounded-lg bg-gray-800 border border-gray-700">
+                        <p class="font-semibold text-white">Primary Focus:</p>
+                        <ul class="list-disc list-inside text-gray-400 mt-1">
+                            <li>HCIA-Datacom V1.0 (Huawei)</li>
+                            <li>Practical labs: Cisco Packet Tracer, Huawei eNSP</li>
+                            <li>Network fundamentals: TCP/IP, OSPF, BGP, VLANs, STP, Subnetting</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Tier 2 -->
+                <div class="mb-12 relative timeline-item">
+                    <h3 class="text-2xl font-bold text-sky-400">Tier 2: Master Cloud Fundamentals</h3>
+                    <p class="font-semibold text-white mt-1">Status: <span class="text-yellow-400">Next Up</span></p>
+                    <p class="mt-2 text-gray-400">
+                        Learn cloud fundamentals across multiple providers and apply them in hands-on projects.
+                    </p>
+                    <div class="mt-3 p-4 rounded-lg bg-gray-800 border border-gray-700">
+                        <p class="font-semibold text-white">Parallel Focus:</p>
+                        <ul class="list-disc list-inside text-gray-400 mt-1">
+                            <li>AZ-900: Microsoft Azure Fundamentals (completed)</li>
+                            <li>Huawei Cloud coursework (HCIA / HCCDA essentials)</li>
+                            <li>Hybrid connectivity & security patterns</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Tier 3 -->
+                <div class="relative timeline-item">
+                    <h3 class="text-2xl font-bold text-sky-400">Tier 3: Specialize and Advance</h3>
+                    <p class="font-semibold text-white mt-1">Status: <span class="text-gray-500">Future Goal</span></p>
+                    <p class="mt-2 text-gray-400">
+                        Combine networking and cloud skills to specialize in cloud networking, migration, and security.
+                    </p>
+                    <div class="mt-3 p-4 rounded-lg bg-gray-800 border border-gray-700">
+                        <p class="font-semibold text-white">Specializations:</p>
+                        <ul class="list-disc list-inside text-gray-400 mt-1">
+                            <li>AZ-700: Azure Networking Solutions (goal)</li>
+                            <li>HCDP / Cloud Migration specializations (goal)</li>
+                            <li>SC-900: Microsoft Security Fundamentals (goal)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Technical Skills</h2>
+                <div class="w-24 h-1 bg-sky-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Networking Skills -->
+                <div class="glass-effect p-6 rounded-lg text-center">
+                    <i data-lucide="network" class="w-12 h-12 mx-auto text-sky-400"></i>
+                    <h3 class="text-xl font-bold text-white mt-4">Networking</h3>
+                    <p class="mt-2 text-gray-400">TCP/IP, OSPF, BGP, VLANs, STP, Subnetting, VPNs, Firewalls, DNS, DHCP, Network design.</p>
+                </div>
+                <!-- Cloud Platforms -->
+                <div class="glass-effect p-6 rounded-lg text-center">
+                    <i data-lucide="cloud" class="w-12 h-12 mx-auto text-sky-400"></i>
+                    <h3 class="text-xl font-bold text-white mt-4">Cloud Platforms</h3>
+                    <p class="mt-2 text-gray-400">Microsoft Azure (AZ-900), Huawei Cloud (HCIA), Hybrid cloud patterns and networking.</p>
+                </div>
+                <!-- Programming & DSA -->
+                <div class="glass-effect p-6 rounded-lg text-center">
+                    <i data-lucide="code" class="w-12 h-12 mx-auto text-sky-400"></i>
+                    <h3 class="text-xl font-bold text-white mt-4">Programming & DSA</h3>
+                    <p class="mt-2 text-gray-400">C programming, Java, Data Structures & Algorithms — active practice and study.</p>
+                </div>
+                <!-- Tools & OS -->
+                <div class="glass-effect p-6 rounded-lg text-center">
+                    <i data-lucide="terminal-square" class="w-12 h-12 mx-auto text-sky-400"></i>
+                    <h3 class="text-xl font-bold text-white mt-4">Tools & OS</h3>
+                    <p class="mt-2 text-gray-400">Cisco Packet Tracer, Huawei eNSP, Wireshark, Windows Server, Linux (Ubuntu), PowerShell, Bash.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Projects & Labs</h2>
+                <p class="text-gray-400 mt-2">Applying theory through hands-on practice and real projects.</p>
+                <div class="w-24 h-1 bg-sky-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Campus Marketplace -->
+                <div class="glass-effect rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Campus Marketplace Web App</h3>
+                        <p class="mt-2 text-gray-400">
+                            A campus e-commerce marketplace for students to buy and sell items. Built with HTML/CSS and planned to integrate server-side logic and database. Features planned: user accounts, reporting system (suspension rules for suspected scammers), product listings, and secure messaging.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-sky-900 text-sky-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Frontend</span>
+                            <span class="bg-sky-900 text-sky-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">UX</span>
+                            <span class="bg-sky-900 text-sky-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Planned Backend</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chatbot Project -->
+                <div class="glass-effect rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Campus Chatbot (Planned)</h3>
+                        <p class="mt-2 text-gray-400">
+                            Chatbot idea to assist students with campus FAQs, marketplace support, and study reminders. Designed to integrate with the marketplace and provide automated responses for common queries.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-teal-900 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">NLP</span>
+                            <span class="bg-teal-900 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Integration</span>
+                            <span class="bg-teal-900 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Enterprise Network Simulation -->
+                <div class="glass-effect rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Enterprise Network Simulation</h3>
+                        <p class="mt-2 text-gray-400">
+                            Designed and implemented complex enterprise networks using Huawei eNSP and Cisco Packet Tracer — multi-site topologies, redundant links, OSPF/BGP routing, VLAN segmentation and ACLs to emulate real-world WAN environments.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-indigo-900 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">OSPF</span>
+                            <span class="bg-indigo-900 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">BGP</span>
+                            <span class="bg-indigo-900 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">VLANs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hybrid Cloud Connectivity Lab -->
+                <div class="glass-effect rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Hybrid Cloud Connectivity Lab</h3>
+                        <p class="mt-2 text-gray-400">
+                            Built a secure Site-to-Site VPN between a simulated on-premise network and Azure VNet. Configured routing, firewall policies, and IPSec to enable secure hybrid connectivity.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-teal-900 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Azure VNet</span>
+                            <span class="bg-teal-900 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">IPSec</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Azure Hub-Spoke Design -->
+                <div class="glass-effect rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Azure Hub-Spoke Architecture</h3>
+                        <p class="mt-2 text-gray-400">
+                            Designed hub-spoke topology in Azure to centralize shared services (Azure Firewall, shared DNS) and isolate workloads in peered spoke VNets, with UDRs and security controls.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-indigo-900 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">VNet Peering</span>
+                            <span class="bg-indigo-900 text-indigo-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">Azure Firewall</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Education -->
+        <section id="certs" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Certifications & Education</h2>
+                <div class="w-24 h-1 bg-sky-500 mx-auto mt-4"></div>
+            </div>
+            <div class="max-w-3xl mx-auto text-gray-300 space-y-3">
+                <div><strong>BSc Computer Technology</strong> — Murang'a University of Technology (current)</div>
+                <div><strong>HCIA-Datacom</strong> (Huawei)</div>
+                <div><strong>AZ-900:</strong> Microsoft Azure Fundamentals (completed)</div>
+                <div><strong>Cisco Computer Hardware Certification</strong></div>
+                <div><strong>Cisco Introduction to Cybersecurity</strong></div>
+                <div><strong>Cisco Networking Basics</strong></div>
+                <div><strong>Cisco Operating Systems Basics</strong></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">Get In Touch</h2>
+            <div class="w-24 h-1 bg-sky-500 mx-auto mt-4"></div>
+            <p class="mt-4 text-lg max-w-2xl mx-auto text-gray-400">
+                I'm actively looking for internship opportunities and would love to connect. Feel free to reach out via email or connect on GitHub / LinkedIn.
+            </p>
+            <div class="mt-8 flex flex-col md:flex-row justify-center gap-4">
+                <a href="mailto:ronniek605@gmail.com" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-all text-lg">
+                    Personal: ronniek605@gmail.com
+                </a>
+                <a href="mailto:sc20130382023@student.mut.ac.ke" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-6 rounded-lg transition-all text-lg">
+                    School: sc20130382023@student.mut.ac.ke
+                </a>
+            </div>
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/ronny-kiprop-828b612b9/" target="_blank" class="text-gray-400 hover:text-sky-400">
+                    <i data-lucide="linkedin" class="w-8 h-8"></i>
+                </a>
+                <a href="https://github.com/ronn-byte" target="_blank" class="text-gray-400 hover:text-sky-400">
+                    <i data-lucide="github" class="w-8 h-8"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2025 Ronny Kiprop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for(let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Navbar scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('glass-effect', 'shadow-lg');
+            } else {
+                header.classList.remove('glass-effect', 'shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
